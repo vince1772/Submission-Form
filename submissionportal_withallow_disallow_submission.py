@@ -5,7 +5,7 @@ import json
 import pandas as pd
 from datetime import datetime
 import time
-from streamlit_autorefresh import st_autorefresh
+
 
 # === Configuration ===
 # DEFAULT_QUESTIONS is currently an empty dictionary. If you want to add default questions
