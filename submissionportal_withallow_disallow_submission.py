@@ -5,7 +5,7 @@ import json
 import pandas as pd
 from datetime import datetime
 import time
-
+from streamlit_autorefresh import st_autorefresh
 
 # === Configuration ===
 # DEFAULT_QUESTIONS is currently an empty dictionary. If you want to add default questions
@@ -227,6 +227,7 @@ st.sidebar.info("Goodluck class!")  # Display a submission deadline
 
 # === Student Section ===
 if mode == "Student":
+    st_autorefresh(interval=5000, key="student-refresh")
     #st.header("🎓 Student Coding Exam Section")
 
     # Input fields for student credentials
