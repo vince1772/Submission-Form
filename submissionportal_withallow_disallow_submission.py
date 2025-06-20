@@ -320,25 +320,6 @@ elif mode == "Sir Vince Only!":
         except Exception as e:
             st.error(f"Error processing grade file: {e}")
 
-    st.subheader("📚 Upload Final Exam Questions")
-    st.info(
-        "CSV should have columns: 'question', 'option_a', 'option_b', 'option_c', 'option_d', 'answer' (where 'answer' is the full text of the correct option)")
-
-    # File uploader for final exam questions CSV
-    question_file = st.file_uploader("Upload Final Exam CSV", type="csv", key="questions_csv")  # Unique key
-    if question_file:
-        try:
-            df = pd.read_csv(question_file)
-            required_cols = {'question', 'option_a', 'option_b', 'option_c', 'option_d', 'answer'}
-            if required_cols.issubset(df.columns):  # Check required columns
-                df.to_csv(FINAL_EXAM_QUESTIONS_FILE, index=False)  # Save uploaded questions
-                st.success("Final exam questions uploaded successfully!")
-            else:
-                st.error(
-                    "Missing required columns in final exam CSV. Make sure they are: 'question', 'option_a', 'option_b', 'option_c', 'option_d', 'answer'")
-        except Exception as e:
-            st.error(f"Error reading file: {e}")
-
 
     st.subheader("Live Code Broadcast")
     live_code_content = ""
