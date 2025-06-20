@@ -76,7 +76,7 @@ if not os.path.exists(SUBMISSION_FINAL_EXAM):
 
 # === App Config ===
 # Set Streamlit page configuration for a wide layout and a custom page title
-st.set_page_config(page_title="Submission Portal", layout="wide")
+st.set_page_config(page_title="Second Semester Grade", layout="wide")
 st.title("📝 SECOND SEMESTER GRADE")
 st.subheader(" SUBJECTS: CPEN21A, CPEN115, CPEN100")
 
