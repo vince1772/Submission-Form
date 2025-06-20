@@ -34,7 +34,7 @@ FINAL_EXAM_RESULTS_FILE = "FINALExAMBSCPE3-2hdl_results.csv"  # Stores final exa
 FINAL_EXAM_STUDENT_ANSWERS_FILE = "FINALExamBSCPE3-2hdlstudent_answers.csv"  # Stores student's answers for final exam
 
 # Professor password for accessing the admin section
-PROFESSOR_PASSWORD = "securepass123"  # IMPORTANT: In a real-world scenario, use a more secure method for passwords!
+PROFESSOR_PASSWORD = "securedpass123"  # IMPORTANT: In a real-world scenario, use a more secure method for passwords!
 
 # === Setup Directories/Files ===
 # Create the submissions directory if it doesn't exist
