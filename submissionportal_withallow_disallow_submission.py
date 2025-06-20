@@ -227,7 +227,6 @@ st.sidebar.info("Goodluck class!")  # Display a submission deadline
 
 # === Student Section ===
 if mode == "Student":
-    st_autorefresh(interval=5000, key="student-refresh")
     #st.header("🎓 Student Coding Exam Section")
 
     # Input fields for student credentials
